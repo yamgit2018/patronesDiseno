@@ -46,3 +46,43 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.layout-shitfer-grid
+{
+    display: grid;
+    /* grid-template-rows: minmax(min-content, max-content); */
+}
+
+@media (min-width:992px)
+{
+    .layout-shitfer-grid
+    {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+aside
+{
+    grid-row: 2/3;
+}
+
+@media (min-width:992px)
+{
+    aside
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+
+@media (min-width:768px)
+{
+    .contenido-principal
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+

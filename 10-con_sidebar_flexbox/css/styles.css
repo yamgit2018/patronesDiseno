@@ -46,3 +46,28 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media (min-width:768px)
+{
+    .sidebar-flex
+    {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+
+     .contenido-principal
+    {
+        flex: 0 0 calc(60% - 1rem);
+        /* flex-basis: calc(60% - 2rem); */
+        order: +1;
+    }
+
+    .nosotros-mision
+    {
+        flex: 0 0 calc(40% - 1rem);
+        /* flex-basis: calc(40% - 2rem); */
+        /* order: -1; */
+    } 
+}
