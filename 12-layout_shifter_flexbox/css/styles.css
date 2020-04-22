@@ -46,3 +46,63 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.layout-shifter-flex
+{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+}
+
+@media (min-width:992px)
+{
+    .layout-shifter-flex
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}
+
+.primera
+{
+    order: +1;
+}
+
+@media (min-width:992px)
+{
+    .primera
+    {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+
+
+
+@media (min-width:768px)
+{
+    .contenido-principal
+    {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .entrada-blog
+    {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+
+@media (min-width:992px)
+{
+    .contenido-principal
+    {
+        /* flex-direction: column; */
+        display: block;
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
